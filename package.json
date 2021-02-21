@@ -1,7 +1,7 @@
 {
-  "name": "termux-wabot",
+  "name": "im-lexa-v2",
   "version": "0.0.2",
-  "description": "No comment",
+  "description": "Termux-whatsapp-bot",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -43,10 +43,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mhankbarbar/termux-wabot.git"
+    "url": "git+https://github.com/mrfzvx12/im-lexa-v2.git"
   },
   "bugs": {
-    "url": "https://github.com/mhankbarbar/termux-wabot/issues"
+    "url": "https://github.com/mrfzvx12/im-lexa-v2/issues"
   },
-  "homepage": "https://github.com/mhankbarbar/termux-wabot#readme"
+  "homepage": "https://github.com/mrfzvx12/im-lexa-v2#readme"
 }
