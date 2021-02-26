@@ -21,16 +21,13 @@
 <a href="https://github.com/mrfzvx12/im-lexa-v2"><img src="https://img.shields.io/github/search/mrfzvx12/im-lexa-v2/termux-whatsapp-bot?label=Search&style=plastic"></a>
 </p>
 
-
-
-
-
-
 # Lest begin's
 # Klik watch biar dapet notif pas update
 
 ### Setting
-Ubah setting di 
+* DATA BOT
+
+Tempat
 
 ```im-lexa-v2/data/setting```
 
@@ -55,6 +52,23 @@ Contoh default :
   "Pulsa": "082223014661",
   "Dana": "082223014661"
 }
+```
+
+* Kontak owner
+
+Tempat
+
+```im-lexa-v2/index.js/101```
+
+Contoh default :
+
+```//--Kontak
+const vcard = 'BEGIN:VCARD\n'
++ 'VERSION:3.0\n'
++ 'FN:Mrf.zvx\n' // Nama
++ 'ORG:Lexa bot;\n' // Nama bot
++ 'TEL;type=CELL;type=VOICE;waid=6282223014661:+62 822-2301-4661\n' // Nomor bot
++ 'END:VCARD' 
 ```
 
 ### Let's connect with me
