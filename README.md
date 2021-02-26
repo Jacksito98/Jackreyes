@@ -26,6 +26,13 @@
 * Klik watch agar dapat notifikasi ketika update
 * Semua fitur work tergantung api dan apikey
 
+### Tes bot
+Sebelum menginstal Lexa V.2 coba dulu botnya disini
+<p>
+<a href="https://chat.whatsapp.com/FQNUK5VFD68GZaB0UlXjst" target="blank"><img src="https://img.shields.io/badge/Grup Whatsapp 1-30302f?style=flat&logo=whatsapp" /></a>
+<a href="https://chat.whatsapp.com/CxAPJ6En3uSDqDX1mmBvrv" target="blank"><img src="https://img.shields.io/badge/Grup Whatsapp 2-30302f?style=flat&logo=whatsapp" /></a>
+</p>
+
 ### Tools
 | Aplikasi | Link |
 |--------|--------|
@@ -48,12 +55,6 @@
 > bash install.sh
 > npm start
 ```
-### Tes bot
-Sebelum menginstal Lexa V.2 coba dulu botnya disini
-<p>
-<a href="https://chat.whatsapp.com/FQNUK5VFD68GZaB0UlXjst" target="blank"><img src="https://img.shields.io/badge/Grup Whatsapp 1-30302f?style=flat&logo=whatsapp" /></a>
-<a href="https://chat.whatsapp.com/CxAPJ6En3uSDqDX1mmBvrv" target="blank"><img src="https://img.shields.io/badge/Grup Whatsapp 2-30302f?style=flat&logo=whatsapp" /></a>
-</p>
 
 ### Setting
 * DATA BOT
