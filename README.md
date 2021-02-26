@@ -30,7 +30,7 @@
 ### Setting
 * DATA BOT
 
-Tempat
+Tempat :
 
 ```im-lexa-v2/data/setting```
 
@@ -59,18 +59,18 @@ Contoh default :
 
 * Kontak owner
 
-Tempat
+Tempat :
 
 ```im-lexa-v2/index.js/101```
 
 Contoh default :
 
-```//--Kontak
+```
 const vcard = 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n'
 + 'FN:Mrf.zvx\n' // Nama
 + 'ORG:Lexa bot;\n' // Nama bot
-+ 'TEL;type=CELL;type=VOICE;waid=6282223014661:+62 822-2301-4661\n' // Nomor bot
++ 'TEL;type=CELL;type=VOICE;waid=6282223014661:+62 822-2301-4661\n' // Nomor owner
 + 'END:VCARD' 
 ```
 
