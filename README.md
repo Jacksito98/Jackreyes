@@ -22,3 +22,4 @@
 </p>
 
 # Lest begin's
+# Klik watch biar dapet notif pas update
