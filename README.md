@@ -44,7 +44,7 @@ Sebelum menginstal Lexa V.2 coba dulu botnya disini
 ### Setting
 * DATA BOT
 
-Tempat : ```im-lexa-v2/data/setting```
+Tempat : ```./data/setting```
 
 Contoh default :
 ``` {
@@ -71,7 +71,7 @@ Contoh default :
 
 * Kontak owner
 
-Tempat : ```im-lexa-v2/index.js/101```
+Tempat : ```./index.js/101```
 
 Contoh default :
 
