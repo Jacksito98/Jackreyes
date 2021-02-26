@@ -26,7 +26,7 @@ const {negara} = require('./src/kodenegara');
 const {wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, clos } = require('./lib/functions');
 const {fetchJson} = require('./lib/fetcher');
 const {recognize} = require('./lib/ocr');
-const {ind} = require('./language/ind');
+
 //--
 
 //--Pakage Npm
@@ -62,7 +62,6 @@ const imagenye = JSON.parse(fs.readFileSync('./temp/image.json'))
 
 //--File json user
 const _limit = JSON.parse(fs.readFileSync('./datauser/limit.json'));
-const _warn = JSON.parse(fs.readFileSync('./datauser/warn.json'));
 const uang = JSON.parse(fs.readFileSync('./datauser/uang.json'));
 const _registered = JSON.parse(fs.readFileSync('./datauser/registered.json'));
 //--
