@@ -26,6 +26,14 @@
 * Klik watch agar dapat notifikasi ketika update
 * Semua fitur work tergantung api dan apikey
 
+### Install
+
+```bash
+> git clone https://github.com/mrfzvx12/im-lexa-v2
+> cd im-lexa-v2
+> bash install.sh
+> npm start
+```
 
 ### Setting
 * DATA BOT
