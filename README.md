@@ -22,7 +22,10 @@
 </p>
 
 # Lest begin's
-# Klik watch biar dapet notif pas update
+* Klik stars agar bisa terus update
+* Klik watch agar dapat notifikasi ketika update
+* Semua fitur work tergantung api dan apikey
+
 
 ### Setting
 * DATA BOT
