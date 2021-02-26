@@ -21,8 +21,41 @@
 <a href="https://github.com/mrfzvx12/im-lexa-v2"><img src="https://img.shields.io/github/search/mrfzvx12/im-lexa-v2/termux-whatsapp-bot?label=Search&style=plastic"></a>
 </p>
 
+
+
+
+
+
 # Lest begin's
 # Klik watch biar dapet notif pas update
+
+### Setting
+Ubah setting di 
+
+```im-lexa-v2/data/setting```
+
+Contoh default :
+``` {
+	"prefix": ".",
+	"ownerNumber": "6282223014661",
+	"BarBarKey": "YourApiKey",
+	"Vhtearkey": "YourApiKey",
+	"LolHumanKey": "YourApiKey",
+        "Vinzapi": "Yourapikey",
+        "Itsmeikyapi": "Yourapikey",
+	"limit": "20",
+  "memberlimit": "20",
+  "cr": "𝗠𝗮𝗱𝗲 𝗪𝗶𝘁𝗵 ❤️",
+  "hargalimit": "500",
+  "NamaBot": "Lexa V.2",
+  "Ig": "http://www.instagram.com/mrf.zvx/",
+  "Wa1": "https://chat.whatsapp.com/FQNUK5VFD68GZaB0UlXjst",
+  "Wa2": "https://chat.whatsapp.com/CxAPJ6En3uSDqDX1mmBvrv",
+  "Ovo": "082223014661",
+  "Pulsa": "082223014661",
+  "Dana": "082223014661"
+}
+```
 
 ### Let's connect with me
 <p>
