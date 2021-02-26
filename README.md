@@ -26,7 +26,21 @@
 * Klik watch agar dapat notifikasi ketika update
 * Semua fitur work tergantung api dan apikey
 
-### Install
+### Tools
+
+| **Termux** | [Download disini](https://play.google.com/store/apps/details?id=com.termux) |
+|--------|--------|
+| **Acode** | [Download disini](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree) |
+<p align="center">
+  <div align="center">
+ <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></code>
+ <code><img height="40" src="https://user-images.githubusercontent.com/72728486/108440991-c9196180-7286-11eb-910e-d95691565ec8.png"></code>
+
+  </div>
+  </p>
+
+
+### Install With Termux
 
 ```bash
 > git clone https://github.com/mrfzvx12/im-lexa-v2
