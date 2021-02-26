@@ -62,7 +62,8 @@ Sebelum menginstal Lexa V.2 coba dulu botnya disini
 Tempat : ```./data/setting```
 
 Contoh default :
-``` {
+```
+{
 	"prefix": ".",
 	"ownerNumber": "6282223014661",
 	"BarBarKey": "YourApiKey",
