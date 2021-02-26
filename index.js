@@ -624,8 +624,8 @@ _Kumpulkan saldo untuk membeli limit_
 ‣ Status online: *${kyun(uptime)}*
 ‣ Mengetik: *ON*
 ‣ Group:  *${groupName}*
-‣ Jumlah user : *1${_registered.length} User*
-‣ Jumlah chat : *3${totalchat.length} Chat*
+‣ Jumlah user : *${_registered.length} User*
+‣ Jumlah chat : *${totalchat.length} Chat*
 ‣ Official group
 • _${Wa1}_
 
@@ -1061,8 +1061,8 @@ case 'kutuk':
   ‣ *Prefix* : ${prefix}
   ‣ *Total Block Contact* : ${blocked.length}
   ‣ *The bot is active on* : ${kyun(uptime)}
-  ‣ *Total User* : 1${_registered.length} User
-  ‣ *Total Chat* : 3${totalchat.length}`
+  ‣ *Total User* : ${_registered.length} User
+  ‣ *Total Chat* : ${totalchat.length}`
   buffer = await getBuffer(me.imgUrl)
   Lxa.sendMessage(from, buffer, image, {
 caption: teks, contextInfo: {
@@ -1077,7 +1077,7 @@ const timestamp = speed();
 const latensi = speed() - timestamp
 Lxa.updatePresence(from, Presence.composing)
 uptime = process.uptime()
-Lxa.sendMessage(from, `*Kecepatan respon bot*\n‣ *Speed* : ${latensi.toFixed(4)} _Second_\n\n*Info bot*\n‣ *Total chat* : 3${totalchat.length}\n‣ *Total User* : 1${_registered.length}\n‣ *Block* : ${blocked.length}\n‣ *Online* : ${kyun(uptime)}`, text, {
+Lxa.sendMessage(from, `*Kecepatan respon bot*\n‣ *Speed* : ${latensi.toFixed(4)} _Second_\n\n*Info bot*\n‣ *Total chat* : ${totalchat.length}\n‣ *Total User* : ${_registered.length}\n‣ *Block* : ${blocked.length}\n‣ *Online* : ${kyun(uptime)}`, text, {
   quoted: mek
 })
 break
