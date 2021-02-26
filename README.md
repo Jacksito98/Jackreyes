@@ -27,9 +27,9 @@
 * Semua fitur work tergantung api dan apikey
 
 ### Tools
-
-| **Termux** | [Download disini](https://play.google.com/store/apps/details?id=com.termux) |
+| Aplikasi | Link |
 |--------|--------|
+| **Termux** | [Download disini](https://play.google.com/store/apps/details?id=com.termux) |
 | **Acode** | [Download disini](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree) |
 <p align="center">
   <div align="center">
