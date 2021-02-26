@@ -598,6 +598,7 @@ case 'menu':
 hasil = `        ────────────────
 Hei *${pushname}* coba ketik ${prefix}menu
         ────────────────`
+reply(hasil)
         break
 }
 
