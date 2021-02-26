@@ -626,6 +626,7 @@ _Kumpulkan saldo untuk membeli limit_
 ‣ Group:  *${groupName}*
 ‣ Jumlah user : *${_registered.length} User*
 ‣ Jumlah chat : *${totalchat.length} Chat*
+‣ Github : https://github.com/mrfzvx12/termux-whatsapp-bot
 ‣ Official group
 • _${Wa1}_
 
