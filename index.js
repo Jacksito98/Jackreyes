@@ -225,39 +225,6 @@ fs.writeFileSync('./datauser/limit.json', JSON.stringify(_limit))
   }
 }
 
-//--warn
-const warnAdd = (sender) => {
-  let position = false
-  Object.keys(_warn).forEach((i) => {
-if (_warn[i].id == sender) {
-  position = i
-}
-  })
-  if (position !== false) {
-_warn[position].warn += 1
-fs.writeFileSync('./datauser/warn.json', JSON.stringify(_warn))
-  }
-}
-
-//---cek warn
-const checkwarn = (sender) => {
-      let found = false
-     for (let lmt of _warn) {
-     if (lmt.id === sender) {
-      warnCounts = warnawal - lmt.limit
-      Lxa.sendMessage(from, `〘  *Warn* 〙
-Kamu memilih : *${limitCounts}* warn
-_Kamu akan di kick jika memiliki ${warnawal}_`, text, { quoted : mek})
-      found = true
-                                }
-                        }
-      if (found === false) {
-      let obj = { id: sender, limit: 1 }
-      _warn.push(obj)
-     fs.writeFileSync('./datauser/limit.json', JSON.stringify(_warn))
-                        }
-                }
-
 //--Waktu
 function kyun(seconds){
   function pad(s){
