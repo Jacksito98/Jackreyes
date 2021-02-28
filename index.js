@@ -576,7 +576,7 @@ case 'help':
   case 'menu':
 case '?':
   if (!isRegister) return reply(mess.only.daftarB)
-  const uangku = checkATMuser(sender)
+ 
   uptime = process.uptime()
   const Menu = {
 text: `    ────✪ 🄼🅁🄵.🅉🅅🅇 ✪────
