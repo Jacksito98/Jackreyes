@@ -793,12 +793,12 @@ _${Ig}_
 ┏━━━━━━━━━━━━━━━━━━━━
 ┠⊷️ *${prefix}Ephoto list*
 ┃ _Menampilkan kode text ephoto_
-┠⊷️ *${prefix}Ephoto (Kode|Teks)*
-┃ _Ex : ${prefix}Ephoto 25|Lexa_
+┠⊷️ *${prefix}Ephoto (Kode + Teks)*
+┃ _Ex : ${prefix}Ephoto 25 Lexa_
 ┠⊷️ *${prefix}Textpro list*
 ┃ _Menampilkan kode text textpro_
-┠⊷️ *${prefix}Textpro (Kode|Teks)*
-┃ _Ex : ${prefix}Textpro 55|Lexa_
+┠⊷️ *${prefix}Textpro (Kode + Teks)*
+┃ _Ex : ${prefix}Textpro 55 Lexa_
 ┗━━━━━━━━━━━━━━━━━━━━
 *〘 PICTURE 〙*
 ┏━━━━━━━━━━━━━━━━━━━━
