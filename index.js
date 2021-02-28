@@ -1111,7 +1111,7 @@ break
 //--pencarian pinterest
   case 'img':
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 if (args.length < 1) return reply('*☒* Masukan query')
 tels = body.slice(5)
 Lxa.updatePresence(from, Presence.composing)
@@ -1136,7 +1136,7 @@ break
 case 'pinterest':
 tels = body.slice(11)
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 if (args.length < 1) return reply('*☒* Masukan query')
 Lxa.updatePresence(from, Presence.composing)
 try {
@@ -1169,7 +1169,7 @@ case 'listonline':
 //--pinterest anime neko
 case 'neko':
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 Lxa.updatePresence(from, Presence.composing)
 uk = ["anime neko"]
 nk = uk[Math.floor(Math.random() * uk.length)]
@@ -1193,7 +1193,7 @@ break
 //--Pinteres anime loli
   case 'loli':
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 Lxa.updatePresence(from, Presence.composing)
 uk = ["anime loli"]
 nk = uk[Math.floor(Math.random() * uk.length)]
@@ -1218,7 +1218,7 @@ break
 //--Pinterest Twitter
   case 'twit':
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 Lxa.updatePresence(from, Presence.composing)
 tw = ["Twitter lucu Indonesia",
   "Twitter harian",
@@ -1245,7 +1245,7 @@ break
   //
   case 'anime':
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 Lxa.updatePresence(from, Presence.composing)
 am = ["anime tumblr",
   "wallpaper anime hd",
@@ -1269,7 +1269,7 @@ break
   case 'wp':
 case 'wallpaper':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   Lxa.updatePresence(from, Presence.composing)
   pw = ["wallpaper aestethic",
 "wallpaper tumblr",
@@ -1296,7 +1296,7 @@ quoted: mek, caption: `keren gak ?`
 //--Pinterest cecan
 case 'cecan':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   tels = body.slice(5)
   Lxa.updatePresence(from, Presence.composing)
   ty = ["ulzhang girl",
@@ -1326,7 +1326,7 @@ quoted: mek, caption: `Gimana ?`
 //--Pinterest quotes
 case 'quotes':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   tels = body.slice(5)
   Lxa.updatePresence(from, Presence.composing)
   qt = ["quotes galau",
@@ -1354,7 +1354,7 @@ quoted: mek, caption: `Kasian jomblo`
 //--Pinterest cogan
 case 'cogan':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   Lxa.updatePresence(from, Presence.composing)
   uk = ["ulzhang boy","cowok keren","cowo ganteng","cogan","cogan jawa"]
   nk = uk[Math.floor(Math.random() * uk.length)]
@@ -1378,7 +1378,7 @@ quoted: mek, caption: `Wah ganteng kek gua`
 //--Pinterest cyberpunk
 case 'cyberpunk':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   Lxa.updatePresence(from, Presence.composing)
   co = ["anime cyberpunk","fotografi cyberpunk","tokyo cyberpunk"]
   nk = co[Math.floor(Math.random() * co.length)]
@@ -1401,7 +1401,7 @@ quoted: mek
 
 case 'jadian':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return Lxa.sendMessage(from, `Masukan tanggal-bulan-tahun`, text, {
 quoted: mek
   })
@@ -1427,7 +1427,7 @@ quoted: mek
 
 
 case 'asupan':
-  if (isLimit(sender)) return reply(mess.limitend)
+  
 if (!isRegister) return reply(mess.only.daftarB)
 try {
 data = await fetchJson(`https://api.itsmeikyxsec404.xyz/asupan?apikey=${meKey}`)
@@ -1444,7 +1444,7 @@ break
 
 case 'weton':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return Lxa.sendMessage(from, `Masukan tanggal-bulan-tahun`, text, {
 quoted: mek
   })
@@ -1469,7 +1469,7 @@ break
 
 case 'seberapagay':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return Lxa.sendMessage(from, '*☒* Masukan pertanyaan', text, {
 quoted: mek
   })
@@ -1483,7 +1483,7 @@ quoted: mek
 
 case 'seberapabucin':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return Lxa.sendMessage(from, '*☒* Masukan nama target', text, {
 quoted: mek
   })
@@ -1503,7 +1503,7 @@ quoted: mek
 case 'lirik':
   if (args.length < 1) return reply('Masukan query')
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   Lxa.updatePresence(from, Presence.composing)
   tels = body.slice(7)
   try {
@@ -1521,7 +1521,7 @@ case 'namae':
   if (args.length < 1) return reply('*☒* Masukan nama')
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 teks = body.slice(7) 
 try {
 data = await fetchJson(`https://api.terhambar.com/ninja?nama=${teks}`)
@@ -1537,7 +1537,7 @@ case 'alay':
   if (args.length < 1) return reply('*☒* Masukan teks')
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 teks = body.slice(6)
 try {
 data = await fetchJson(`https://api.terhambar.com/bpk?kata=${teks}`)
@@ -1552,7 +1552,7 @@ break
 case 'gplaystore':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 goo = body.slice(12)
 try {
 data = await fetchJson(`https://api.zeks.xyz/api/sgplay?apikey=${viKey}&q=${goo}`, {
@@ -1574,7 +1574,7 @@ break
 case 'bijak':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 try {
 data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/katabijak?apikey=${lolKey}`)
 reply(data.result)
@@ -1588,7 +1588,7 @@ case 'pantun':
 
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 try {
 data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/pantun?apikey=${lolKey}`)
 reply(data.result)
@@ -1603,7 +1603,7 @@ case 'gombal':
 
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   try {
   data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/bucin?apikey=${lolKey}`)
   reply(data.result)
@@ -1617,7 +1617,7 @@ case 'charnime':
   teks = body.slice(10)
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return reply('*☒* Masukan nama karakter anime')
   try {
   data = await fetchJson(`http://lolhuman.herokuapp.com/api/character?apikey=${lolKey}&query=${teks}`)
@@ -1637,7 +1637,7 @@ case 'textgen':
   if (args.length < 1) return reply('*☒* Masukan teks')
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   try {
   data = await fetchJson(`https://api.arugaz.my.id/api/random/text/fancytext?text=${teks}`)
   reply(data.result)
@@ -1652,7 +1652,7 @@ case 'kusonime':
   teks = body.slice(6)
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return reply('*☒* Masukan nama animenya')
   try {
   data = await fetchJson(`https://st4rz.herokuapp.com/api/kuso?q=${teks}`)
@@ -1670,7 +1670,7 @@ quoted: mek, caption: hasil
 case 'igstalk':
 yolo = body.slice(9)
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 if (args.length < 1) return reply('*☒* Masukan username')
 try {
 hmm = await fetchJson(`http://lolhuman.herokuapp.com/api/stalkig/${yolo}?apikey=${lolKey}`)
@@ -1897,7 +1897,7 @@ quoted: mek
 //---quoted fuck my life
 case 'fml':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   try {
 data = await fetchJson(`https://api.zeks.xyz/api/fml`)
 if (!isRegister) return reply(mess.only.daftarB)
@@ -1912,7 +1912,7 @@ break
 //--translate semua bahasa
   case 'tl':
     if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
 if (args.length < 1) return Lxa.sendMessage(from, '*☒* Masukan teks/kode bahasa', text, {
   quoted: mek
 })
@@ -1933,7 +1933,7 @@ break
 //---membalikan kalimat
   case 'reverse':
     if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
 if (args.length < 1) return Lxa.sendMessage(from, '*☒* Masukan teks', text, {
   quoted: mek
 })
@@ -2014,7 +2014,7 @@ break
 //--jawaban BRANLy
   case 'brainly':
 if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
 if (args.length < 1) return Lxa.sendMessage(from, '*☒* Masukan pertanyaan', text, {
   quoted: mek
 })
@@ -2033,7 +2033,7 @@ break
   //pencarian wiki
   case 'wiki':
     if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 if (args.length < 1) return reply('Masukan query')
 tels = body.slice(6)
 try {
@@ -2052,7 +2052,7 @@ break
 
 case 'google':
   if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
   if (args.length < 1) return reply('*☒* Masukan teks')
   goo = body.slice(7)
   try {
@@ -2092,7 +2092,7 @@ quoted: mek
 //---Neonime search
 case 'neonime':
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 Lxa.updatePresence(from, Presence.composing)
 reply(mess.wait)
 if (args.length < 1) return reply(`*☒* Masukan judul anime`)
@@ -2142,7 +2142,7 @@ break
 case 'meme':
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 try {
   beh = await fetchJson(`https://api.zeks.xyz/api/memeindo?apikey=${viKey}`)
   pint = await getBuffer(beh.result)
@@ -2172,7 +2172,7 @@ case 'kbbi':
   Lxa.updatePresence(from, Presence.composing)
   if (args.length < 1) return reply(`*☒* Masukan teks\nContoh : ${prefix}kbbi manusia`)
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   tels = body.slice(6)
   try {
   data = await fetchJson(`https://tobz-api.herokuapp.com/api/kbbi?kata=${tels}&apikey=BotWeA`)
@@ -2189,7 +2189,7 @@ case 'kbbi':
   case 'chatprank':
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
-if (isLimit(sender)) return reply(mess.limitend)
+
 if (args.length < 1) return reply(`*☒* Masukan teks\nContoh : ${prefix}chatprank p/unten`)
 tels = body.slice(11)
 var teks1 = tels.split("/")[0];
@@ -2204,7 +2204,7 @@ break
 case 'chord':
   if (args.length < 1) return reply('Masukan query')
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   Lxa.updatePresence(from, Presence.composing)
   tels = body.slice(7)
   try {
@@ -2221,7 +2221,7 @@ method: 'get'
 //--jadwaltv now
 case 'jadwaltvnow':
   if (!isRegister) return reply(mess.only.daftarB)
-    if (isLimit(sender)) return reply(mess.limitend)
+    
   Lxa.updatePresence(from, Presence.composing)
   reply(mess.wait)
   try {
@@ -2238,7 +2238,7 @@ method: 'get'
 //--jadwaltv ch
 case 'jadwaltv':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   ch = body.slice(10)
   if (args.length < 1) return reply('*☒* Masukan nama channel')
   Lxa.updatePresence(from, Presence.composing)
@@ -2259,7 +2259,7 @@ method: 'get'
 //--mini map
 case 'map':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return reply('*☒* Masukan nama daerah')
   daerah = body.slice(5)
   try {
@@ -2279,7 +2279,7 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 case 'alquran':
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return reply('*☒* Masukan nomor surah 1-114')
   if (isNaN(args.length < 1)) return await reply('Gunakan nomor surah')
   tels = body.slice(9)
@@ -2307,7 +2307,7 @@ teks += `*(${i.number})* ${i.text}\n*(${i.number})* ${i.translation_id}\n••�
 case 'cerpen':
 if (!isRegister) return reply(mess.only.daftarB)
 Lxa.updatePresence(from, Presence.composing)
-if (isLimit(sender)) return reply(mess.limitend)
+
 try {
 data = await fetchJson(`https://docs-jojo.herokuapp.com/api/cerpen`)
 hasil = `*CERPEN*\n‣ Judul : *${data.result.title}*\n‣ Pengarang : *${data.result.pengarang}}*\n${data.result.cerpen}`
@@ -2332,7 +2332,7 @@ break
 //---Random ayat Alquran
 case 'ngaji':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   try {
   anu = await fetchJson(`https://api.banghasan.com/quran/format/json/acak`, {
 method: 'get'
@@ -2350,7 +2350,7 @@ quoted: mek
 //--tafsir Alquran
 case 'tafsir':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return reply('Masukan query')
   teks = body.slice(8)
   try {
@@ -2368,7 +2368,7 @@ case 'tafsir':
 case 'sholat':
   loc = body.slice(7)
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return reply('Masukan nama daerah')
   try {
   anu = await fetchJson(`https://mhankbarbar.tech/api/jadwalshalat?daerah=${loc}&apiKey=${BarBarKey}`, {
@@ -2387,7 +2387,7 @@ quoted: mek
 //--info cuaca
 case 'cuaca':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return reply('Masukan nama daerah')
   tels = body.slice(7)
   try {
@@ -2408,7 +2408,7 @@ quoted: mek
 //informasi gempa terkini
 case 'infogempa':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   Lxa.updatePresence(from, Presence.composing)
   try {
   anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/infogempa`, {
@@ -2489,7 +2489,7 @@ quoted: mek, caption: teks
 
 case 'play':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return reply('Masukan judul lagu')
   reply(mess.wait)
   play = body.slice(6)
@@ -2515,7 +2515,7 @@ mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek
 
 case 'ytmp3':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   reply(mess.wait)
   play = body.slice(7)
   if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply('Format link salah, gunakan link youtube')
@@ -2538,7 +2538,7 @@ mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek
 
 case 'ytmp4':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   reply(mess.wait)
   play = body.slice(7)
   try {
@@ -2581,7 +2581,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 //--download pinterest
 case 'pin':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
     if(!isUrl(args[0]) && !args[0].includes('pin')) return reply('Format link salah, gunakan link pinterest')
   reply(mess.wait)
   play = body.slice(5)
@@ -2601,7 +2601,7 @@ mimetype: 'video/mp4', filename: `${anu.result}.mp4`, quoted: mek
 
 case 'fb':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   reply(mess.wait)
   if(!isUrl(args[0]) && !args[0].includes('facebook')) return reply('Format link salah, gunakan link facebook')
   play = body.slice(4)
@@ -2621,7 +2621,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 
 case 'ig':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   reply(mess.wait)
     if(!isUrl(args[0]) && !args[0].includes('instagram')) return reply('Format link salah, gunakan link instagram')
   play = body.slice(4)
@@ -2641,7 +2641,7 @@ mimetype: 'video/mp4', filename: `Imlexa.mp4`, quoted: mek
 //joox download
 case 'joox':
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return reply('Masukan judul lagu')
   tels = body.slice(6)
   try {
@@ -2665,7 +2665,7 @@ mimetype: 'audio/mp4', filename: `${data.result.title}.mp3`, quoted: mek
 
 case 'scdl':
     if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (args.length < 1) return reply('Masukan link soundcloud')
   tels = body.slice(6)
   try {
@@ -2685,7 +2685,7 @@ mimetype: 'audio/mp4', filename: `${data.title}.mp3`, quoted: mek
 case 'tik':
   if (args.length < 1) return reply('*☒* Masukan link')
   if (!isRegister) return reply(mess.only.daftarB)
-  if (isLimit(sender)) return reply(mess.limitend)
+  
   if (!isUrl(args[0]) && !args[0].includes('vt.tiktok')) return reply(mess.error.Iv)
   try {
   anu = await fetchJson(`https://api.arugaz.my.id/api/media/tiktok?url=${args[0]}`, {
