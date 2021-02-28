@@ -61,8 +61,8 @@ const audionye = JSON.parse(fs.readFileSync('./temp/vn.json'))
 const imagenye = JSON.parse(fs.readFileSync('./temp/image.json'))
 
 //--File json user
-const _limit = JSON.parse(fs.readFileSync('./datauser/limit.json'));
-const uang = JSON.parse(fs.readFileSync('./datauser/uang.json'));
+/*const _limit = JSON.parse(fs.readFileSync('./datauser/limit.json'));
+const uang = JSON.parse(fs.readFileSync('./datauser/uang.json'));*/
 const _registered = JSON.parse(fs.readFileSync('./datauser/registered.json'));
 //--
 
@@ -75,10 +75,10 @@ const dare = JSON.parse(fs.readFileSync('./data/fakta.json'));
 
 //--Setting
 prefix = up.prefix
-const limitawal = up.limit;
+//const limitawal = up.limit;
 const memberlimit = up.memberlimit;
 const cr = up.cr;
-const hargalimit = up.hargalimit;
+//const hargalimit = up.hargalimit;
 const NamaBot = up.NamaBot;
 const Ig = up.Ig;
 const Wa1 = up.Wa1;
@@ -109,7 +109,7 @@ const vcard = 'BEGIN:VCARD\n'
 
 //--Datauser
 
-const getLimit = (sender) => {
+/*const getLimit = (sender) => {
   let position = false
   Object.keys(limit).forEach ((i) => {
 if (limit[position].id === sender) {
@@ -120,7 +120,7 @@ if (limit[position].id === sender) {
 return limit[position].limit
   }
 }
-
+*/
 const getRegisteredRandomId = () => {
   return _registered[Math.floor(Math.random() * _registered.length)].id
 }
@@ -152,7 +152,7 @@ if (_registered[i].id === sender) {
 }
 
 
-const addATM = (sender) => {
+/*const addATM = (sender) => {
   const obj = {
 id: sender, uang: 0
   }
@@ -224,6 +224,7 @@ _limit[position].limit += 1
 fs.writeFileSync('./datauser/limit.json', JSON.stringify(_limit))
   }
 }
+*/
 
 //--Waktu
 function kyun(seconds){
@@ -443,7 +444,7 @@ const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stic
 			}
 
 //----limit
-const isLimit = (sender) => {
+/*const isLimit = (sender) => {
   let position = false
   for (let i of _limit) {
 if (i.id === sender) {
@@ -503,6 +504,7 @@ addKoinUser(sender, uangsaku)
 console.error(err)
   }
 }
+*/
 
 //--Member limit
 if (isGroup) {
@@ -581,8 +583,6 @@ text: `    ────✪ 🄼🅁🄵.🅉🅅🅇 ✪────
         ────────────────
 〘 *USER* 〙
 ‣ Nama : *${pushname}*
-‣ Saldo ATM : *Rp.${uangku}.-*
-_Kumpulkan saldo untuk membeli limit_
         ────────────────͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏
         ────────────────
 〘 *BOT* 〙
@@ -618,17 +618,6 @@ _${Ig}_
 ┗━━━━━━━━━━━━━━━━━━━━
 ┏━━━━━━━━━━━━━━━━━━━━
 ┃─────〘  *List menu* 〙─────
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 ATM 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Ceklimit*
-┃ _Mengecek sisa limit_
-┠⊷️ *${prefix}Ceksaldo*
-┃ _Mengecek jumlah saldo_
-┠⊷️ *${prefix}Buylimit*
-┃ _Membeli limit_
-┠⊷️ *${prefix}Transfer (Tag target|Jumlah)*
-┃ _Mentransfer saldo atm_
 ┗━━━━━━━━━━━━━━━━━━━━
 *〘 GRUP 〙*
 ┏━━━━━━━━━━━━━━━━━━━━
@@ -944,7 +933,7 @@ quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { re
   break
 
 //--Cek limit user
-case 'ceklimit':
+/*case 'ceklimit':
   if (!isRegister) return reply(mess.only.daftarB)
   checkLimit(sender)
   break
@@ -962,6 +951,7 @@ case 'ceksaldo':
   reply(hasil)
   break
 
+*/
 
 	break
 					case 'slow':
@@ -1015,14 +1005,6 @@ case 'ceksaldo':
 						fs.unlinkSync(ran)
 					})
 					break
-
-case 'kutuk':
-		
-   const gmek = await Lxa.getGroupMembers(groupId)
-   let gmik = gmek[Math.floor(Math.random() * gmek.length)]
-   const mmkk = ` @${gmik.replace(/@c.us/g, '')}`
-    Lxa.sendTextWithMentions(dari, mmkk, id)
-                    break
 
 //--Info bot
 				case 'info':
@@ -2446,7 +2428,7 @@ caption: hasil, quoted: mek
   break
 
 //---Buy limit
-case 'buylimit':
+/*case 'buylimit':
   if (args.length < 1) return reply(`Berapa limit yang mau di beli? Pastikan saldo ATM cukup juga! \n\nCara cek saldo : ${prefix}Ceksaldo`)
   if (!isRegister) return reply(mess.only.daftarB)
   payout = body.slice(10)
@@ -2489,7 +2471,7 @@ await reply(`〘  *TRANSFER*  〙
   }
   await limitAdd(sender)
   break
-
+*/
 case 'itsme':
   if (!isRegister) return reply(mess.only.daftarB)
   try {
@@ -3240,7 +3222,6 @@ setTimeout(() => {
 quoted: mek, caption: 'APA HAYOO'
   }) // ur cods
 }, 0) // 1000 = 1s,
-if(budy.includes == `${anu.result.jawaban}`) reply('Kamu benar')
 break
 
 
@@ -3336,19 +3317,6 @@ case 'unblock':
 					Lxa.sendMessage(from, buff, image, {quoted: mek})
 					break
 
-
-case 'testik':
- if (!isRegister) return reply(mess.only.userB)
-            var imgbb = require('imgbb-uploader')
-           if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
-           ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
-           reply(mess.wait)
-         owgi = await Lxa.downloadAndSaveMediaMessage(ger)
-           anu = await imgbb("08579d070df9a07cb1c2ee565aece767", owgi)
-        teks = `${anu.display_url}`
-reply(teks)
-}
-break
 
 
 				case 'ttp':
@@ -3541,7 +3509,7 @@ case 'setppbot':
   break
 
 //event
-case 'event':
+/*case 'event':
   if (!isGroup) return reply(mess.only.group)
   if (!isOwner) return reply(mess.only.ownerB)
   if (args.length < 1) return reply('ketik 1 untuk mengaktifkan')
@@ -3558,7 +3526,7 @@ reply('*☉* Menonaktifkan *EVENT* di group ini*')
 reply(ind.satukos())
   }
   break
-
+*/
 //--Mengambil link grup
     case 'linkgroup':
     case 'linkgc':
@@ -3654,10 +3622,8 @@ Kode : *${serialUser}*
 ╔════════════════════
 ╠≽️ *Nama* : *${namaUser}*
 ╠≽️ *Nomor* : *${sender.split("@")[0]}*
-╠≽️ *Limit Awal* : 20
 ╚════════════════════`
 reply(hasil)
-  addATM(sender)
   console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'), 'in', color(sender || groupName))
 } else {
   addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
@@ -3666,10 +3632,8 @@ Kode : *${serialUser}*
 ╔════════════════════
 ╠≽️ *Nama* : *${namaUser}*
 ╠≽️ *Nomor* : *${sender.split("@")[0]}*
-╠≽️ *Limit Awal* : 20
 ╚════════════════════`
 reply(hasil)
-  addATM(sender)
   console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'))
 }
 tm = `verifikasi selesai silahkan ketik ${prefix}Menu untuk menampilkan list menu`
