@@ -576,7 +576,6 @@ case 'help':
   case 'menu':
 case '?':
   if (!isRegister) return reply(mess.only.daftarB)
- 
   uptime = process.uptime()
   const Menu = {
 text: `    ────✪ 🄼🅁🄵.🅉🅅🅇 ✪────
@@ -1064,7 +1063,7 @@ try {
 data = await fetchJson(`https://scrap.terhambar.com/nama?n=${teks}`)
 hasil = `Nama : *${teks}*\n${data.result.arti}`
 reply(hasil)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1088,7 +1087,7 @@ yoi = `‣ *Nama* : ${aku}
 Lxa.sendMessage(from, yoi, text, {
   quoted: mek
 })
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1104,7 +1103,7 @@ try {
 data = await fetchJson(`https://api.vhtear.com/zodiak?query=${teks}&apikey=${vKey}`)
 hasil = `Zodiak : *${data.result.zodiak}*\nRamalan hari ini : *${data.result.ramalan}*\n${data.result.inspirasi}`
 reply(hasil)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1128,7 +1127,7 @@ pok = await getBuffer(nimek)
 Lxa.sendMessage(from, pok, image, {
   quoted: mek, caption: `Berhasil mengambil gambar : *${tels}*`
 })
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1152,7 +1151,7 @@ pok = await getBuffer(nimek)
 Lxa.sendMessage(from, pok, image, {
   quoted: mek, caption: `Berhasil mengambil gambar : *${tels}*`
 })
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1186,7 +1185,7 @@ pok = await getBuffer(nimek)
 Lxa.sendMessage(from, pok, image, {
   quoted: mek, caption: `Ini ?`
 })
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1210,7 +1209,7 @@ pok = await getBuffer(nimek)
 Lxa.sendMessage(from, pok, image, {
   quoted: mek, caption: `Ini ?`
 })
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1238,7 +1237,7 @@ pok = await getBuffer(nimek)
 Lxa.sendMessage(from, pok, image, {
   quoted: mek
 })
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1264,7 +1263,7 @@ pok = await getBuffer(nimek)
 Lxa.sendMessage(from, pok, image, {
   quoted: mek, caption: `wah wibu lu !`
 })
-await limitAdd(sender)
+
 break
 
 //--Pinterest wallpaper
@@ -1289,7 +1288,7 @@ method: 'get'
   Lxa.sendMessage(from, pok, image, {
 quoted: mek, caption: `keren gak ?`
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1319,7 +1318,7 @@ method: 'get'
   Lxa.sendMessage(from, pok, image, {
 quoted: mek, caption: `Gimana ?`
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1345,7 +1344,7 @@ method: 'get'
   Lxa.sendMessage(from, pok, image, {
 quoted: mek, caption: `Kasian jomblo`
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1371,7 +1370,7 @@ method: 'get'
   Lxa.sendMessage(from, pok, image, {
 quoted: mek, caption: `Wah ganteng kek gua`
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1395,7 +1394,7 @@ method: 'get'
   Lxa.sendMessage(from, pok, image, {
 quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1421,7 +1420,7 @@ method: 'get'
   Lxa.sendMessage(from, hasil, text, {
 quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1438,7 +1437,7 @@ hasil = await getBuffer(data.result)
 Lxa.sendMessage(from, hasil, video, {
   caption: 'Nih gan', quoted: mek
 })
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1463,7 +1462,7 @@ method: 'get'
   hasil = `${iya.result.weton}\n\nKarakteristik: ${iya.result.karakter}\n Pekerjaan : ${iya.result.pekerjaan}\n Rejeki : ${iya.result.rejeki}\nJodoh : ${iya.result.jodoh}`
 reply(hasil)
 break
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1480,7 +1479,7 @@ quoted: mek
   data = await fetchJson(`https://arugaz.herokuapp.com/api/howgay`)
   hasil = `*Gay Detected*\n‣ Target : *${args[0]}*\n‣ Persentase : *${data.persen}%*\n*${data.desc}*`
   reply(hasil)
-  await limitAdd(sender)
+  
   break
 
 case 'seberapabucin':
@@ -1495,7 +1494,7 @@ quoted: mek
   data = await fetchJson(`https://arugaz.herokuapp.com/api/howbucins`)
   hasil = `*Bucin Detected*\n‣ Target : *${args[0]}*\n‣ Persentase : *${data.persen}%*\n*${data.desc}*`
   reply(hasil)
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1513,7 +1512,7 @@ case 'lirik':
 method: 'get'
   })
   reply(anu.result.lirik)
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1529,7 +1528,7 @@ try {
 data = await fetchJson(`https://api.terhambar.com/ninja?nama=${teks}`)
 hasil = `*Nama ninja kamu*\n*${data.result.ninja}*`
 reply(hasil)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1544,7 +1543,7 @@ teks = body.slice(6)
 try {
 data = await fetchJson(`https://api.terhambar.com/bpk?kata=${teks}`)
 reply(data.text)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1567,7 +1566,7 @@ teks = '*Google Play Store*\n\n'
 				}
 				teks += `        ────────────────`
 reply(teks.trim())
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1580,7 +1579,7 @@ if (isLimit(sender)) return reply(mess.limitend)
 try {
 data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/katabijak?apikey=${lolKey}`)
 reply(data.result)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1594,7 +1593,7 @@ if (isLimit(sender)) return reply(mess.limitend)
 try {
 data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/pantun?apikey=${lolKey}`)
 reply(data.result)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1609,7 +1608,7 @@ case 'gombal':
   try {
   data = await fetchJson(`http://lolhuman.herokuapp.com/api/random/bucin?apikey=${lolKey}`)
   reply(data.result)
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1628,7 +1627,7 @@ case 'charnime':
   Lxa.sendMessage(from, buf, image, {
 caption: hasil, quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1643,7 +1642,7 @@ case 'textgen':
   try {
   data = await fetchJson(`https://api.arugaz.my.id/api/random/text/fancytext?text=${teks}`)
   reply(data.result)
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1663,7 +1662,7 @@ case 'kusonime':
   Lxa.sendMessage(from, buf, image, {
 quoted: mek, caption: hasil
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -1682,7 +1681,7 @@ hasil = `‣ *Username* : ${hmm.result.username}\n‣ *Fullname* : ${hmm.result.
 Lxa.sendMessage(from, buffer, image, {
   quoted: mek, caption: hasil
 })
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1905,7 +1904,7 @@ data = await fetchJson(`https://api.zeks.xyz/api/fml`)
 if (!isRegister) return reply(mess.only.daftarB)
 hasil = data.result
 reply(hasil)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1926,7 +1925,7 @@ data = await fetchJson(`https://api-translate.azharimm.tk/translate?engine=googl
 if (!isRegister) return reply(mess.only.daftarB)
 hasil = `*Translate* :\n${data.data.result}`
 reply(hasil)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -1945,7 +1944,7 @@ data = await fetchJson(`https://videfikri.com/api/hurufterbalik/?query=${pc}`)
 if (!isRegister) return reply(mess.only.daftarB)
 hasil = data.result.kata
 reply(hasil)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -2043,7 +2042,7 @@ anu = await fetchJson(`https://tobz-api.herokuapp.com/api/wiki?q=${tels}&apikey=
   method: 'get'
 })
 reply(anu.result)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -2066,7 +2065,7 @@ method: 'get'
   Lxa.sendMessage(from, pint, image, {
 caption: '*Google Image*\n\n*Hasil Pencarian : '+goo+'*', quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2085,7 +2084,7 @@ method: 'get'
   Lxa.sendMessage(from, hasil, text, {
 quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2109,7 +2108,7 @@ for (let i of data.result) {
 }
 reply(teks.trim())
 if (data.message) return reply(`Maaf Info anime *${teks} tidak ditemukan`)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -2152,7 +2151,7 @@ try {
   Lxa.sendMessage(from, pint, image, {
 quoted: mek
   })
-  await limitAdd(sender)
+  
 } catch {
   reply(mess.ferr)
 }
@@ -2181,7 +2180,7 @@ case 'kbbi':
   if (data.error) return reply(data.error)
   hasil = `KAMUS BESAR BAHASA INDONESIA\n\n${data.result}`
   reply(hasil)
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2214,7 +2213,7 @@ case 'chord':
 method: 'get'
   })
   reply(anu.result)
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2231,7 +2230,7 @@ case 'jadwaltvnow':
 method: 'get'
   })
   reply(anu.result.jadwalTV)
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2252,7 +2251,7 @@ method: 'get'
   n = JSON.parse(JSON.stringify(anu.result));
   hasil = `*Jadwal Tv* : ${ch} hari ini\n${n}`
   reply(hasil)
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2271,7 +2270,7 @@ case 'map':
   Lxa.sendMessage(from, hasil, image, {
 quoted: mek, caption: `Hasil Dari *${daerah}*`
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2299,7 +2298,7 @@ method: 'get'
 teks += `*(${i.number})* ${i.text}\n*(${i.number})* ${i.translation_id}\n••••••••••••••••••••••••••••••••••••••••••••••\n`
   }
   reply(teks.trim())
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2314,7 +2313,7 @@ try {
 data = await fetchJson(`https://docs-jojo.herokuapp.com/api/cerpen`)
 hasil = `*CERPEN*\n‣ Judul : *${data.result.title}*\n‣ Pengarang : *${data.result.pengarang}}*\n${data.result.cerpen}`
 reply(hasil)
-await limitAdd(sender)
+
 } catch {
   reply(mess.ferr)
 }
@@ -2343,7 +2342,7 @@ method: 'get'
   Lxa.sendMessage(from, quran, text, {
 quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2360,7 +2359,7 @@ case 'tafsir':
   data = await fetchJson(`http://api-melodicxt-2.herokuapp.com/api/tafsir-quran?query=${teks}&apiKey=${Mkey}`)
   hasil = `*${data.result.query}*\n\n${data.result.ayat}\n\n*Terjemahan* :\n${data.result.terjemahan_ayat}\n\n*Tafsir* : ${data.result.tafsir_jalalayn}`
   reply(hasil)
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2380,7 +2379,7 @@ method: 'get'
   Lxa.sendMessage(from, mbteks, text, {
 quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2400,7 +2399,7 @@ method: 'get'
   Lxa.sendMessage(from, hasil, text, {
 quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2421,7 +2420,7 @@ method: 'get'
   Lxa.sendMessage(from, buffer, image, {
 caption: hasil, quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2469,7 +2468,7 @@ await reply(`〘  *TRANSFER*  〙
   ‣ *Jumlah transfer* : Rp.${jumlah},-
   ‣ *Biaya admin* : Rp.${fee},-`)
   }
-  await limitAdd(sender)
+  
   break
 */
 case 'itsme':
@@ -2486,7 +2485,7 @@ ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gamb
   Lxa.sendMessage(from, its, image, {
 quoted: mek, caption: teks
   })
-  await limitAdd(sender)
+  
   break
 
 case 'play':
@@ -2508,7 +2507,7 @@ quoted: mek, caption: infomp3
   Lxa.sendMessage(from, lagu, audio, {
 mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2532,7 +2531,7 @@ quoted: mek, caption: infomp3
   Lxa.sendMessage(from, lagu, audio, {
 mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2556,7 +2555,7 @@ quoted: mek, caption: infomp3
   Lxa.sendMessage(from, lagu, video, {
 mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2574,7 +2573,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 						teks += `*Title* : ${i.title}\n*Id* : ${i.id}\n*Published* : ${i.publishTime}\n*Duration* : ${i.duration}\n*Views* : ${h2k(i.views)}\n=================\n`
 					}
 					reply(teks.trim())
-					await limitAdd(sender)
+					
 					} catch {
 					  reply(mess.ferr)
 					}
@@ -2595,7 +2594,7 @@ case 'pin':
   Lxa.sendMessage(from, lagu, video, {
 mimetype: 'video/mp4', filename: `${anu.result}.mp4`, quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2615,7 +2614,7 @@ case 'fb':
   Lxa.sendMessage(from, lagu, video, {
 mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2633,7 +2632,7 @@ case 'ig':
   Lxa.sendMessage(from, lagu, video, {
 mimetype: 'video/mp4', filename: `Imlexa.mp4`, quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2659,7 +2658,7 @@ quoted: mek, caption: infomp3
   Lxa.sendMessage(from, lagu, audio, {
 mimetype: 'audio/mp4', filename: `${data.result.title}.mp3`, quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2678,7 +2677,7 @@ method: 'get'
   Lxa.sendMessage(from, lagu, audio, {
 mimetype: 'audio/mp4', filename: `${data.title}.mp3`, quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -2703,7 +2702,7 @@ quoted: mek, caption: teks
   Lxa.sendMessage(from, buffer, video, {
 mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
   })
-  await limitAdd(sender)
+  
   } catch {
     reply(mess.ferr)
   }
@@ -3336,7 +3335,7 @@ case 'unblock':
 							fs.unlinkSync(rano)
 						})
 					})
-					await limitAdd(sender)
+					
 					break
 
 //---Tagall member
@@ -3575,7 +3574,7 @@ anu = await fetchJson(`https://videfikri.com/api/primbon/artimimpi/?mimpi=${arug
   method: 'get'
 })
 reply(anu.result.artimimpi)
-await limitAdd(sender)
+
 } catch {
   reply('Sepertinya fitur sedang eror')
 }
