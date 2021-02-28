@@ -863,6 +863,8 @@ _${Ig}_
 ┃ _Menampilkan trend Twitter_
 ┠⊷️ *${prefix}Beritahoax*
 ┃ _Menampilkan info berita palsu_
+┠⊷️ *${prefix}Gplaystore*
+┃ _Pencarian aplikasi di playstore_
 ┗━━━━━━━━━━━━━━━━━━━━
 *〘 PRIMBON 〙*
 ┏━━━━━━━━━━━━━━━━━━━━
@@ -3033,7 +3035,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				audionye.push(`${svst}`)
 				fs.writeFileSync(`./temp/audio/${svst}.mp3`, delb)
 				fs.writeFileSync('./temp/vn.json', JSON.stringify(audionye))
-				Lxa.sendMessage(from, `Sukses Menambahkan Video\nCek dengan cara ${prefix}listvn`, MessageType.text, { quoted: mek })
+				Lxa.sendMessage(from, `Sukses Menambahkan Audio\nCek dengan cara ${prefix}listvn`, MessageType.text, { quoted: mek })
 				break
 
 			case 'getvn':
