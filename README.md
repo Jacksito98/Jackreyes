@@ -51,7 +51,7 @@ Sebelum menginstal Lexa V.2 coba dulu botnya disini
 
 ```bash
 > git clone https://github.com/mrfzvx12/termux-whatsapp-bot
-> cd im-lexa-v2
+> cd termux-whatsapp-bot
 > bash install.sh
 > npm start
 ```
