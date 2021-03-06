@@ -2024,7 +2024,6 @@ Lxa.updatePresence(from, Presence.composing)
 data = await fetchJson(`https://api.vhtear.com/branly?query=${teks}&apikey=${vKey}`)
 hasil = data.result.data
 reply(hasil)
-await limitAdd(mess.ferr)
 } catch {
   reply(mess.ferr)
 }
@@ -3584,9 +3583,9 @@ break
 					if (args.length < 1) return reply(`Hai ${pushname}`)
 					teks = body.slice(6)
 					try { 
-					anu = await fetchJson(`https://api.xteam.xyz/simsimi?kata=${teks}&APIKEY=${xKey}`, {method: 'get'})
+					anu = await fetchJson(`https://simsumi.herokuapp.com/api?text=${teks}`, {method: 'get'})
 					if (anu.error) return reply('Simi ga tau kak')
-					reply(anu.jawaban)
+					reply(anu.success)
 					} catch {
 					  reply(mess.ferr)
 					}
@@ -3598,7 +3597,7 @@ case 'bot':
 					try { 
 					anu = await fetchJson(`https://simsumi.herokuapp.com/api?text=${teks}`, {method: 'get'})
 					if (anu.error) return reply('Simi ga tau kak')
-					reply(anu.jawaban)
+					reply(anu.success)
 					} catch {
 					  reply(mess.ferr)
 					}
