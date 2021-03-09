@@ -245,7 +245,7 @@ const {
 	  Lxa.logger.level = 'warn'
 	  console.log(banner.string)
 	  Lxa.on('qr', () => {
-		  console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code above'))
+		  console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scanea el codigo pero rapido'))
 	  })
   
 	  fs.existsSync('./Lexa.json') && Lxa.loadAuthInfo('./Lexa.json')
