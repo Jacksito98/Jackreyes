@@ -973,7 +973,7 @@ case 'ceksaldo':
   ☿ *Tiempo activo* : ${kyun(uptime)}
   ☿ *Total de usuarios* : ${_registered.length} Usuarios
   ☿ *Total de chats* : ${totalchat.length}`
-  ☿ * bot creado en Javascript* 
+  ☿ *bot creado en Javascript* 
   buffer = await getBuffer(me.imgUrl)
   Lxa.sendMessage(from, buffer, image, {
 caption: teks, contextInfo: {
