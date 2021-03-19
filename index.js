@@ -3512,7 +3512,7 @@ reply(ind.satukos())
 						fs.unlinkSync(medimg)
 						if (err) return reply('No se pudo hacer :(')
 						buffer = fs.readFileSync(ran)
-						Lxa.sendMessage(from, buffer, image, {quoted: mek, caption: 'Mr.Pato-Bot'})
+						Lxa.sendMessage(from, buffer, image, {quoted: mek, caption: '𝕵𝖆𝖈𝖐 🐧🇩🇴'})
 						fs.unlinkSync(ran)
 					})
 					break
