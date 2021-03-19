@@ -878,7 +878,7 @@ _${Ig}_https://www.instagram.com/p/CMeBPOrHB6X/?igshid=ceir0q0gxvjx
 ╠⛦ *${prefix}Blocklist*
 ║ _Lista de usuarios bloqueados_
 ╚═══════════════════♆`,
-
+𝐂𝐚𝐫𝐥𝐚 𝐭𝐞 𝐪𝐮𝐢𝐞𝐫𝐨 𝐦𝐮𝐜𝐡𝐨♥️
 contextInfo: {
   mentionedJid: [sender]
 }
